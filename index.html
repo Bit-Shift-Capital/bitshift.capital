@@ -14,9 +14,21 @@
             background-color: #ffffff;
             color: #333333;
         }
+        .title-container {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;  /* Reduced from 1rem to 0.25rem */
+            margin-bottom: 1.5rem;
+        }
+        .logo {
+            width: 2rem;
+            height: 2rem;
+            color: #333333;
+            margin-right: -0.25rem;  /* Added negative margin to move even closer */
+        }
         h1 {
             font-size: 2.5rem;
-            margin-bottom: 1.5rem;
+            margin: 0;
             font-weight: 500;
         }
         .email-container {
@@ -34,16 +46,22 @@
         a:hover {
             text-decoration: underline;
         }
-        .icon {
+        .email-icon {
             width: 1.2rem;
             height: 1.2rem;
         }
     </style>
 </head>
 <body>
-    <h1>Bit Shift Capital</h1>
+    <div class="title-container">
+        <svg class="logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 3L8 12L16 21"/>
+            <path d="M10 3L2 12L10 21"/>
+        </svg>
+        <h1>Bit Shift Capital</h1>
+    </div>
     <div class="email-container">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#0066cc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg class="email-icon" viewBox="0 0 24 24" fill="none" stroke="#0066cc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
             <polyline points="22,6 12,13 2,6"/>
         </svg>
